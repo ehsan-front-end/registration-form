@@ -1,0 +1,869 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Vazir;
+    color: white;
+}
+
+body {
+    background: linear-gradient(135deg, #18316d, #0d5166);
+    background-attachment: fixed;
+}
+
+@media only screen and (max-width: 576px) {
+    .box {
+        position: relative;
+        width: 90%;
+        height: 710px;
+        top: calc(100vh - 95vh);
+        bottom: calc(100vh - 95vh);
+        left: calc(100% - 95%);
+        right: calc(100% - 95%);
+        border-radius: 50px;
+        background-color: rgba(255, 255, 255, 0.09);
+    }
+
+    .box .img-control {
+        position: absolute;
+        width: 90px;
+        height: 90px;
+        left: 20px;
+        top: 0px;
+    }
+
+    .box .img-control img {
+        width: 120%;
+        height: 120%;
+        object-fit: contain;
+    }
+
+    .box section {
+        position: absolute;
+        width: 90%;
+        top: 10px;
+        left: 35px;
+        color: white;
+    }
+
+    .box section h2 {
+        font-size: 28px;
+        margin: 50px 10px 20px 10px;
+    }
+
+    .box section p {
+        font-size: 12px;
+        margin: 0px 10px 20px 10px;
+
+    }
+
+    .box section h3 {
+        font-size: 23px;
+        margin: 0px 10px 10px 10px;
+    }
+
+    .box section ul li {
+        font-size: 18px;
+        margin: 0px 20px 10px 10px;
+
+        & i {
+            font-size: 20px;
+            margin: 5px;
+        }
+    }
+
+    .form-box {
+        position: absolute;
+        width: 90%;
+        height: 46%;
+        right: 5%;
+        top: 370px;
+        border-radius: 50px;
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+
+    input:focus-visible {
+        outline: 3px solid white;
+    }
+
+    .form-box input::placeholder {
+        color: white;
+        font-size: 15px;
+        text-align: start;
+        padding: auto, 20px;
+    }
+
+    .form-box h2 {
+        position: absolute;
+        display: inline;
+        color: white;
+        font-size: 35px;
+        right: 43%;
+    }
+
+    .form-box .email {
+        position: absolute;
+        display: inline;
+        width: 94%;
+        height: 50px;
+        left: 3%;
+        top: 60px;
+        color: white;
+        background: rgba(255, 255, 255, 0.3);
+        text-align: center;
+        border: 1px solid rgba(255, 255, 255, 0.01);
+        border-radius: 10px;
+    }
+
+    .form-box .password {
+        position: absolute;
+        display: inline;
+        width: 94%;
+        height: 50px;
+        left: 3%;
+        top: 135px;
+        color: white;
+        background: rgba(255, 255, 255, 0.3);
+        text-align: center;
+        border: 1px solid rgba(255, 255, 255, 0.01);
+        border-radius: 10px;
+    }
+
+    .form-box .checkbox {
+        position: absolute;
+        top: 200px;
+        right: 25px;
+
+        & input {
+            width: 15px;
+            height: 15px;
+        }
+
+        & span {
+            color: white;
+            font-size: 15px;
+        }
+    }
+
+    .form-box .sign-up {
+        position: absolute;
+        display: inline;
+        width: 94%;
+        height: 40px;
+        left: 3%;
+        top: 240px;
+        color: white;
+        background: linear-gradient(90deg, rgb(17, 125, 241), cadetblue);
+        text-align: center;
+        font-size: 20px;
+        border: 1px solid rgba(255, 255, 255, 0.01);
+        border-radius: 10px;
+        cursor: pointer;
+        transition: all 0.05s linear;
+    }
+
+    .form-box .sign-up:hover {
+        background: linear-gradient(90deg, cadetblue, rgb(17, 125, 241));
+    }
+
+    .form-box .sign-up:active {
+        color: black;
+        background: white;
+    }
+
+    .form-box h3 {
+        position: absolute;
+        top: 290px;
+        right: 20px;
+        font-size: 15px;
+        color: white;
+    }
+
+    .form-box h3 a {
+        color: #18316d;
+    }
+}
+
+@media only screen and (max-width: 768px) and (min-width: 576px) {
+    .box {
+        position: relative;
+        width: 90%;
+        height: 760px;
+        top: calc(100vh - 95vh);
+        bottom: calc(100vh - 95vh);
+        left: calc(100% - 95%);
+        right: calc(100% - 95%);
+        border-radius: 50px;
+        background-color: rgba(255, 255, 255, 0.09);
+    }
+
+    .box .img-control {
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        left: 20px;
+        top: 0px;
+    }
+
+    .box .img-control img {
+        width: 120%;
+        height: 120%;
+        object-fit: contain;
+    }
+
+    .box section {
+        position: absolute;
+        width: 90%;
+        top: 10px;
+        left: 35px;
+        color: white;
+    }
+
+    .box section h2 {
+        font-size: 30px;
+        margin: 50px 10px 20px 10px;
+    }
+
+    .box section p {
+        font-size: 13px;
+        margin: 0px 10px 20px 10px;
+
+    }
+
+    .box section h3 {
+        font-size: 25px;
+        margin: 0px 10px 10px 10px;
+    }
+
+    .box section ul li {
+        font-size: 20px;
+        margin: 0px 20px 10px 10px;
+
+        & i {
+            font-size: 20px;
+            margin: 5px;
+        }
+    }
+
+    .form-box {
+        position: absolute;
+        width: 90%;
+        height: 50%;
+        right: 5%;
+        top: 370px;
+        border-radius: 50px;
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+
+    input:focus-visible {
+        outline: 3px solid white;
+    }
+
+    .form-box input::placeholder {
+        color: white;
+        font-size: 20px;
+        text-align: start;
+        padding: auto, 20px;
+    }
+
+    .form-box h2 {
+        position: absolute;
+        display: inline;
+        color: white;
+        font-size: 40px;
+        right: 43%;
+    }
+
+    .form-box .email {
+        position: absolute;
+        display: inline;
+        width: 94%;
+        height: 50px;
+        left: 3%;
+        top: 80px;
+        color: white;
+        background: rgba(255, 255, 255, 0.3);
+        text-align: center;
+        border: 1px solid rgba(255, 255, 255, 0.01);
+        border-radius: 10px;
+    }
+
+    .form-box .password {
+        position: absolute;
+        display: inline;
+        width: 94%;
+        height: 50px;
+        left: 3%;
+        top: 165px;
+        color: white;
+        background: rgba(255, 255, 255, 0.3);
+        text-align: center;
+        border: 1px solid rgba(255, 255, 255, 0.01);
+        border-radius: 10px;
+    }
+
+    .form-box .checkbox {
+        position: absolute;
+        top: 230px;
+        right: 25px;
+
+        & input {
+            width: 15px;
+            height: 15px;
+        }
+
+        & span {
+            color: white;
+            font-size: 20px;
+        }
+    }
+
+    .form-box .sign-up {
+        position: absolute;
+        display: inline;
+        width: 94%;
+        height: 40px;
+        left: 3%;
+        top: 270px;
+        color: white;
+        background: linear-gradient(90deg, rgb(17, 125, 241), cadetblue);
+        text-align: center;
+        font-size: 25px;
+        border: 1px solid rgba(255, 255, 255, 0.01);
+        border-radius: 10px;
+        cursor: pointer;
+        transition: all 0.05s linear;
+    }
+
+    .form-box .sign-up:hover {
+        background: linear-gradient(90deg, cadetblue, rgb(17, 125, 241));
+    }
+
+    .form-box .sign-up:active {
+        color: black;
+        background: white;
+    }
+
+    .form-box h3 {
+        position: absolute;
+        top: 320px;
+        right: 20px;
+        color: white;
+    }
+
+    .form-box h3 a {
+        color: #18316d;
+    }
+}
+
+@media only screen and (max-width: 992px) and (min-width: 768px) {
+    .box {
+        position: relative;
+        width: 90%;
+        height: 900px;
+        top: calc(100vh - 95vh);
+        bottom: calc(100vh - 95vh);
+        left: calc(100% - 95%);
+        right: calc(100% - 95%);
+        border-radius: 50px;
+        background-color: rgba(255, 255, 255, 0.09);
+    }
+
+    .box .img-control {
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        left: 20px;
+        top: 0px;
+    }
+
+    .box .img-control img {
+        width: 120%;
+        height: 120%;
+        object-fit: contain;
+    }
+
+    .box section {
+        position: absolute;
+        width: 90%;
+        top: 10px;
+        left: 35px;
+        color: white;
+    }
+
+    .box section h2 {
+        font-size: 40px;
+        margin: 50px 10px 20px 10px;
+    }
+
+    .box section p {
+        font-size: 15px;
+        margin: 0px 10px 20px 10px;
+
+    }
+
+    .box section h3 {
+        font-size: 30px;
+        margin: 0px 10px 10px 10px;
+    }
+
+    .box section ul li {
+        font-size: 22px;
+        margin: 0px 20px 10px 10px;
+
+        & i {
+            font-size: 20px;
+            margin: 5px;
+        }
+    }
+
+    .form-box {
+        position: absolute;
+        width: 90%;
+        height: 50%;
+        right: 5%;
+        top: 420px;
+        border-radius: 50px;
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+
+    input:focus-visible {
+        outline: 3px solid white;
+    }
+
+    .form-box input::placeholder {
+        color: white;
+        font-size: 25px;
+        text-align: start;
+        padding: auto, 20px;
+    }
+
+    .form-box h2 {
+        position: absolute;
+        display: inline;
+        color: white;
+        font-size: 50px;
+        right: 44%;
+    }
+
+    .form-box .email {
+        position: absolute;
+        display: inline;
+        width: 94%;
+        height: 60px;
+        left: 3%;
+        top: 100px;
+        color: white;
+        background: rgba(255, 255, 255, 0.3);
+        text-align: center;
+        border: 1px solid rgba(255, 255, 255, 0.01);
+        border-radius: 10px;
+    }
+
+    .form-box .password {
+        position: absolute;
+        display: inline;
+        width: 94%;
+        height: 60px;
+        left: 3%;
+        top: 200px;
+        color: white;
+        background: rgba(255, 255, 255, 0.3);
+        text-align: center;
+        border: 1px solid rgba(255, 255, 255, 0.01);
+        border-radius: 10px;
+    }
+
+    .form-box .checkbox {
+        position: absolute;
+        top: 280px;
+        right: 25px;
+
+        & input {
+            width: 20px;
+            height: 20px;
+        }
+
+        & span {
+            color: white;
+            font-size: 25px;
+        }
+    }
+
+    .form-box .sign-up {
+        position: absolute;
+        display: inline;
+        width: 94%;
+        height: 40px;
+        left: 3%;
+        top: 335px;
+        color: white;
+        background: linear-gradient(90deg, rgb(17, 125, 241), cadetblue);
+        text-align: center;
+        font-size: 25px;
+        border: 1px solid rgba(255, 255, 255, 0.01);
+        border-radius: 10px;
+        cursor: pointer;
+        transition: all 0.05s linear;
+    }
+
+    .form-box .sign-up:hover {
+        background: linear-gradient(90deg, cadetblue, rgb(17, 125, 241));
+    }
+
+    .form-box .sign-up:active {
+        color: black;
+        background: white;
+    }
+
+    .form-box h3 {
+        position: absolute;
+        top: 390px;
+        right: 20px;
+        color: white;
+    }
+
+    .form-box h3 a {
+        color: #18316d;
+    }
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 992px) {
+    .box {
+        position: relative;
+        width: 90%;
+        height: 630px;
+        top: calc(100vh - 95vh);
+        bottom: calc(100vh - 95vh);
+        left: calc(100% - 95%);
+        right: calc(100% - 95%);
+        border-radius: 50px;
+        background-color: rgba(255, 255, 255, 0.09);
+    }
+
+    .box .img-control {
+        position: absolute;
+        width: 130px;
+        height: 130px;
+        left: 10px;
+        top: -10px;
+    }
+
+    .box .img-control img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+
+    .box section {
+        position: absolute;
+        width: 40%;
+        top: 50px;
+        left: 35px;
+        color: white;
+    }
+
+    .box section h2 {
+        font-size: 35px;
+        margin: 50px 10px 30px 10px;
+    }
+
+    .box section p {
+        font-size: 18px;
+        margin: 0px 10px 20px 10px;
+
+    }
+
+    .box section h3 {
+        font-size: 28px;
+        margin: 0px 10px 20px 10px;
+    }
+
+    .box section ul li {
+        font-size: 20px;
+        margin: 0px 10px 10px 10px;
+
+        & i {
+            font-size: 30px;
+            margin: 10px;
+        }
+    }
+
+    .form-box {
+        position: absolute;
+        width: 45%;
+        height: 80%;
+        left: 45%;
+        right: 5%;
+        top: 10%;
+        border-radius: 50px;
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+
+    .form-box input::placeholder {
+        color: white;
+        font-size: 20px;
+        text-align: start;
+        padding: auto, 20px;
+    }
+
+    .form-box h2 {
+        position: absolute;
+        display: inline;
+        color: white;
+        font-size: 50px;
+        top: 20px;
+        right: 39%;
+    }
+
+    .form-box .email {
+        position: absolute;
+        display: inline;
+        width: 94%;
+        height: 70px;
+        left: 3%;
+        top: 130px;
+        color: white;
+        background: rgba(255, 255, 255, 0.3);
+        text-align: center;
+        border: 1px solid rgba(255, 255, 255, 0.01);
+        border-radius: 10px;
+    }
+
+    .form-box .password {
+        position: absolute;
+        display: inline;
+        width: 94%;
+        height: 70px;
+        left: 3%;
+        top: 250px;
+        color: white;
+        background: rgba(255, 255, 255, 0.3);
+        text-align: center;
+        border: 1px solid rgba(255, 255, 255, 0.01);
+        border-radius: 10px;
+    }
+
+    .form-box .checkbox {
+        position: absolute;
+        top: 340px;
+        right: 25px;
+
+        & input {
+            width: 20px;
+            height: 20px;
+        }
+
+        & span {
+            color: white;
+            font-size: 20px;
+        }
+    }
+
+    .form-box .sign-up {
+        position: absolute;
+        display: inline;
+        width: 94%;
+        height: 40px;
+        left: 3%;
+        top: 390px;
+        color: white;
+        background: linear-gradient(90deg, rgb(17, 125, 241), cadetblue);
+        text-align: center;
+        font-size: 25px;
+        border: 1px solid rgba(255, 255, 255, 0.01);
+        border-radius: 10px;
+        cursor: pointer;
+        transition: all 0.05s linear;
+    }
+
+    .form-box .sign-up:hover {
+        background: linear-gradient(90deg, cadetblue, rgb(17, 125, 241));
+    }
+
+    .form-box .sign-up:active {
+        color: black;
+        background: white;
+    }
+
+    .form-box h3 {
+        position: absolute;
+        top: 445px;
+        right: 20px;
+        color: white;
+        font-size: 20px;
+    }
+
+    .form-box h3 a {
+        color: #18316d;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .box {
+        position: relative;
+        width: 90%;
+        height: 630px;
+        top: calc(100vh - 95vh);
+        bottom: calc(100vh - 95vh);
+        left: calc(100% - 95%);
+        right: calc(100% - 95%);
+        border-radius: 50px;
+        background-color: rgba(255, 255, 255, 0.09);
+    }
+
+    .box .img-control {
+        position: absolute;
+        width: 150px;
+        height: 150px;
+        left: 10px;
+        top: -10px;
+    }
+
+    .box .img-control img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+
+    .box section {
+        position: absolute;
+        width: 40%;
+        top: 50px;
+        left: 35px;
+        color: white;
+    }
+
+    .box section h2 {
+        font-size: 40px;
+        margin: 50px 10px 30px 10px;
+    }
+
+    .box section p {
+        font-size: 20px;
+        margin: 0px 10px 40px 10px;
+
+    }
+
+    .box section h3 {
+        font-size: 35px;
+        margin: 0px 10px 20px 10px;
+    }
+
+    .box section ul li {
+        font-size: 25px;
+        margin: 0px 10px 10px 10px;
+
+        & i {
+            font-size: 35px;
+            margin: 10px;
+        }
+    }
+
+    .form-box {
+        position: absolute;
+        width: 45%;
+        height: 80%;
+        left: 45%;
+        right: 5%;
+        top: 10%;
+        border-radius: 50px;
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+
+    .form-box input::placeholder {
+        color: white;
+        font-size: 25px;
+        text-align: start;
+        padding: auto, 20px;
+    }
+
+    .form-box h2 {
+        position: absolute;
+        display: inline;
+        color: white;
+        font-size: 70px;
+        right: 39%;
+    }
+
+    .form-box .email {
+        position: absolute;
+        display: inline;
+        width: 94%;
+        height: 70px;
+        left: 3%;
+        top: 130px;
+        color: white;
+        background: rgba(255, 255, 255, 0.3);
+        text-align: center;
+        border: 1px solid rgba(255, 255, 255, 0.01);
+        border-radius: 10px;
+    }
+
+    .form-box .password {
+        position: absolute;
+        display: inline;
+        width: 94%;
+        height: 70px;
+        left: 3%;
+        top: 250px;
+        color: white;
+        background: rgba(255, 255, 255, 0.3);
+        text-align: center;
+        border: 1px solid rgba(255, 255, 255, 0.01);
+        border-radius: 10px;
+    }
+
+    .form-box .checkbox {
+        position: absolute;
+        top: 350px;
+        right: 25px;
+
+        & input {
+            width: 20px;
+            height: 20px;
+        }
+
+        & span {
+            color: white;
+            font-size: 25px;
+        }
+    }
+
+    .form-box .sign-up {
+        position: absolute;
+        display: inline;
+        width: 94%;
+        height: 40px;
+        left: 3%;
+        top: 410px;
+        color: white;
+        background: linear-gradient(90deg, rgb(17, 125, 241), cadetblue);
+        text-align: center;
+        font-size: 25px;
+        border: 1px solid rgba(255, 255, 255, 0.01);
+        border-radius: 10px;
+        cursor: pointer;
+        transition: all 0.05s linear;
+    }
+
+    .form-box .sign-up:hover {
+        background: linear-gradient(90deg, cadetblue, rgb(17, 125, 241));
+    }
+
+    .form-box .sign-up:active {
+        color: black;
+        background: white;
+    }
+
+    .form-box h3 {
+        position: absolute;
+        top: 465px;
+        right: 20px;
+        color: white;
+    }
+
+    .form-box h3 a {
+        color: #18316d;
+    }
+}
